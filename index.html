@@ -68,22 +68,27 @@
             .column-2 {
                 width: 50% !important;
             }
+            
+            /* Mobile-specific vertical text styling */
+            .rotate-text {
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                transform: rotate(180deg);
+                text-align: center;
+                white-space: nowrap;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px !important;
+            }
         }
-        /* Responsive table and columns for mobile */
-        @media (max-width: 768px) {
-            .column-1, .column-2 {
-                display: block !important;
-                width: 100% !important;
-            }
-            .table-responsive {
-                overflow-x: auto;
-            }
-            .table {
-                width: 100% !important;
-                min-width: 0 !important;
-            }
-            td, th {
-                white-space: normal !important;
+        
+        /* Additional mobile support for very small screens */
+        @media (max-width: 400px) {
+            .rotate-text {
+                font-size: 12px !important;
+                letter-spacing: 1px;
             }
         }
     </style>
@@ -210,9 +215,9 @@
 
     <!-- Main table -->
     <div class="table-responsive mx-3 my-3 d-flex">
-        <table class="table table-bordered p-3 w-100">
+        <table class="table table-bordered p-3" style="width: 75%;">
             <tr>
-                <td class="text-center" style="width: 50%;">
+                <td class="text-center" style="width: 60%;">
                     <!-- Column 1 content -->
                     <div class="form-row justify-content-center text-center">
                         <strong><label for="column1Input">Bilan de competences</label></strong>
@@ -700,7 +705,7 @@
 
     </table>
     <!-- Updated 1x2 table -->
-    <div class="container p-0" style="width: 10%; margin: 0;">
+    <div class="container p-0" style="width: 25%; margin: 0;">
         <table class="table table-bordered m-0">
             <thead>
                 <tr>
