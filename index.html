@@ -60,228 +60,13 @@
         }
     </style>
     <style>
-        /* Tablet responsiveness */
-        @media (max-width: 1024px) {
-            .mx-3 {
-                margin-left: 1rem !important;
-                margin-right: 1rem !important;
-            }
-            
-            .table-responsive {
-                font-size: 14px;
-            }
-            
-            .form-row {
-                gap: 5px;
-            }
-            
-            .form-row label {
-                font-size: 14px;
-                min-width: fit-content;
-            }
-            
-            .form-control {
-                font-size: 14px;
-            }
-        }
-
-        /* Mobile and small tablet responsiveness */
-        @media (max-width: 768px) {
-            body {
-                font-size: 12px;
-            }
-            
-            .mx-3 {
-                margin-left: 0.5rem !important;
-                margin-right: 0.5rem !important;
-            }
-            
-            .my-3 {
-                margin-top: 1rem !important;
-                margin-bottom: 1rem !important;
-            }
-            
-            .p-3 {
-                padding: 0.5rem !important;
-            }
-            
-            .table-responsive {
-                font-size: 12px;
-                overflow-x: auto;
-            }
-            
-            .form-row {
-                gap: 3px;
-                flex-wrap: wrap;
-            }
-            
-            .form-row label {
-                font-size: 12px;
-                min-width: fit-content;
-                margin-bottom: 2px;
-            }
-            
-            .form-control {
-                font-size: 12px;
-                padding: 0.25rem;
-            }
-            
-            /* Header adjustments */
-            .border-black {
-                padding: 1rem !important;
-                margin: 0.5rem !important;
-                font-size: 14px;
-            }
-            
-            /* Main table layout adjustments */
-            .d-flex {
-                flex-direction: column !important;
-            }
-            
-            .table[style*="width: 75%"] {
-                width: 100% !important;
-                margin-bottom: 1rem;
-            }
-            
-            .container[style*="width: 25%"] {
-                width: 100% !important;
-                margin: 0 !important;
-            }
-            
-            /* Column adjustments */
-            .column-1 {
-                width: 60% !important;
-                padding: 0.25rem !important;
-            }
-
-            .column-2 {
-                width: 40% !important;
-            }
-            
-            /* Text adjustments for mobile */
-            .column-1 label {
-                font-size: 11px !important;
-                margin: 5px !important;
-                line-height: 1.2;
-            }
-            
-            /* Responsive radio button containers */
-            .column-2 > div {
-                height: 80px !important;
-            }
-            
-            .column-2 label,
-            .column-2 div {
-                min-height: 80px !important;
-            }
-        }
-
         @media (max-width: 500px) {
-            /* Very small screens */
             .column-1 {
-                width: 55% !important;
+                width: 50% !important;
             }
 
             .column-2 {
-                width: 45% !important;
-            }
-            
-            /* Mobile-specific vertical text styling */
-            .rotate-text {
-                writing-mode: vertical-rl;
-                text-orientation: mixed;
-                transform: rotate(180deg);
-                text-align: center;
-                white-space: nowrap;
-                height: 80px !important;
-                width: 25px !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px !important;
-                overflow: hidden;
-                line-height: 1;
-            }
-            
-            .autonomie-td {
-                width: 25px !important;
-                min-width: 25px !important;
-                max-width: 25px !important;
-                height: 80px !important;
-                min-height: 80px !important;
-                max-height: 80px !important;
-                padding: 0 !important;
-            }
-            
-            /* Smaller row heights for very small screens */
-            .column-2 > div {
-                height: 60px !important;
-            }
-            
-            .column-2 label,
-            .column-2 div {
-                min-height: 60px !important;
-            }
-            
-            /* Adjust form elements */
-            .form-row {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 2px;
-            }
-            
-            .form-row label {
-                width: 100%;
-                margin-bottom: 2px;
-            }
-            
-            .form-control {
-                width: 100%;
-                min-width: 0;
-            }
-        }
-        
-        /* Additional mobile support for very small screens */
-        @media (max-width: 400px) {
-            .rotate-text {
-                font-size: 9px !important;
-                letter-spacing: 0.5px;
-                width: 20px !important;
-                height: 70px !important;
-            }
-            
-            .autonomie-td {
-                width: 20px !important;
-                min-width: 20px !important;
-                max-width: 20px !important;
-                height: 70px !important;
-                min-height: 70px !important;
-                max-height: 70px !important;
-            }
-            
-            .column-1 label {
-                font-size: 10px !important;
-            }
-            
-            .table-responsive {
-                font-size: 10px;
-            }
-        }
-        
-        /* Ensure radio buttons and checkboxes remain clickable on mobile */
-        @media (max-width: 768px) {
-            input[type="radio"],
-            input[type="checkbox"] {
-                transform: scale(1.2);
-                margin: 2px;
-            }
-            
-            /* Make label areas more touch-friendly */
-            label {
-                min-height: 44px;
-                display: flex !important;
-                align-items: center;
-                justify-content: center;
+                width: 50% !important;
             }
         }
     </style>
@@ -909,10 +694,10 @@
             </thead>
             <tbody>
                 <tr style="height: 742px;">
-                    <td class="rotate-text autonomie-td" style="font-size: larger;"><strong>Analyse de situations</strong></td>
-                    <td class="rotate-text autonomie-td" style="font-size: larger;"><strong>Adaptations aux situations</strong>
+                    <td class="rotate-text" style="font-size: larger; padding: 0;"><strong>Analyse de situations</strong></td>
+                    <td class="rotate-text" style="font-size: larger; padding: 0;"><strong>Adaptations aux situations</strong>
                     </td>
-                    <td class="rotate-text autonomie-td" style="font-size: larger;"><strong>Conduite Autonome</strong></td>
+                    <td class="rotate-text" style="font-size: larger; padding: 0;"><strong>Conduite Autonome</strong></td>
                 </tr>
                 <tr>
                     <td style="height: 125px;">
